@@ -14,12 +14,6 @@ export const Central = styled.section`
   padding: 6rem 0;
 `
 
-export const ICON = styled.img`
-  width: 35px;
-  height: 35px;
-  color: #219653;
-`
-
 export const UploadPhoto = styled.img`
   width: 338px;
   height: 224.4px;
