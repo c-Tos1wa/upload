@@ -11,3 +11,27 @@ export const LOADing = styled.div`
   justify-content: center;
   gap: 1.5rem;
 `
+
+export const ProgressBar = styled.progress`
+
+  ::-webkit-progress-bar{
+    background-color: #F2F2F2;
+    height: 6px;
+    width: 341px;
+    border-radius: 8px;
+  }
+
+  ::-webkit-progress-value{
+    background: #2F80ED;
+    border-radius: 8px;
+    height: 6px;
+  }
+
+  //for mozilla firefox
+    background-color: #F2F2F2;
+    color: #2F80ED;
+    border-radius: 8px;
+    height: 6px;
+
+
+`

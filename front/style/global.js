@@ -14,4 +14,8 @@ export const Global = createGlobalStyle`
     text-decoration: none;
     color: #000000;
   }
+
+  progress{
+    appearance: none;
+  }
 `

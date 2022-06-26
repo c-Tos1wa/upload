@@ -1,5 +1,5 @@
 import { H2, ALL }  from '../../../style/general'
-import { LOADing } from './style'
+import { LOADing, ProgressBar  } from './style'
 
 
 export function Loading() {
@@ -7,7 +7,7 @@ export function Loading() {
     <ALL>
       <LOADing>
         <H2>Uploading...</H2>
-        
+        <ProgressBar max="100" value="50"/>
       </LOADing>
     </ALL>
   )
