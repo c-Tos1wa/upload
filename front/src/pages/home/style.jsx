@@ -12,7 +12,6 @@ export const UPLoad = styled.section`
   align-items: center;
   gap: 2rem;
 `
-
 export const Card = styled.div`
   width: 338px;
   height: 219px;
@@ -30,7 +29,6 @@ export const Card = styled.div`
     height: 88.24px;
   }
 `
-
 
 export const Choose = styled.button`
   font-family: 'Noto Sans';

@@ -3,8 +3,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 import { BoxCopy, BoxLink, ButtonCopy, Central, UploadPhoto } from "./style";
+import { useState } from "react";
 
 export function Photo() {
+  const [link, setLink] = useState("")
+
+  const handleChange = (e) => {
+    setLink(e.target.value)  
+  }
+
+  const handleCopy = async() => {
+    await navigator.clipboard.writeText(link);
+    
+    alert("The link has been copied!")
+  }
   return (
     <styled.ALL>
       <Central>
@@ -15,10 +27,14 @@ export function Photo() {
           alt=""
         />
         <BoxCopy>
-          <BoxLink>
-            https://images.yourdomain.com/photo-1496950866446-325...
-          </BoxLink>
-          <ButtonCopy>Copy Link</ButtonCopy>
+          <BoxLink
+            value="https://images.yourdomain.com/photo-1496950866446-325..."
+            onChange={handleChange}
+          />
+
+          <ButtonCopy
+            onClick={handleCopy}
+          >Copy Link</ButtonCopy>
         </BoxCopy>
       </Central>
     </styled.ALL>

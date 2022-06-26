@@ -18,4 +18,5 @@ export const Global = createGlobalStyle`
   progress{
     appearance: none;
   }
+
 `

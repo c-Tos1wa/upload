@@ -20,30 +20,38 @@ export const UploadPhoto = styled.img`
   border-radius: 12px;
 `
 
-export const BoxLink = styled.div`
+export const BoxLink = styled.input`
+  width: 240px;
+  height: 12px;
   font-size: 8px;
   line-height: 12px;
   color: #4F4F4F;
   letter-spacing: -0.035em;
+  background-color: transparent;
+  border: 0;
 `
 
 export const BoxCopy = styled.div`
+  width: 338px;
+  height: 34px;
   display: flex;
   align-items: center;
-  gap: 3px;
+  justify-content: space-between;
   background-color: #F6F8FB;
   border: 1px solid #E0E0E0;
   border-radius: 8px;
-  padding: 3px 4px;
+  padding: 3px;
 `
 
 export const ButtonCopy = styled.button`
+  width: 74px;
+  height: 30px;
   font-size: 8px;
   line-height: 12px;
   background-color: #2F80ED;
   color: #ffffff;
   border-radius: 8px;
   border-style: none;
-  padding: 1.5em;
+  text-align: center;
 
 `
